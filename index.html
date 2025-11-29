@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Fixed Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="header-left">
+                <h1 class="logo">GIREMU - Gwilherm L.</h1>
+                <p class="subtitle" data-en="Automation & Cybersecurity" data-fr="Automatisation & Cybersécurité">Automatisation & Cybersécurité</p>
+            </div>
+            <nav class="nav-menu">
+                <a href="#about" data-en="About" data-fr="À propos">À propos</a>
+                <a href="#journey" data-en="Journey" data-fr="Parcours">Parcours</a>
+                <a href="#stack" data-en="Stack" data-fr="Stack">Stack</a>
+                <a href="#projects" data-en="Projects" data-fr="Projets">Projets</a>
+                <a href="#passion" data-en="Hobbies" data-fr="Loisirs">Loisirs</a>
+                <a href="#contact" data-en="Contact" data-fr="Contact">Contact</a>
+            </nav>
+            <div class="lang-switcher">
+                <button class="lang-btn" id="langFr" data-lang="fr">
+                    <img src="assets/flag_fr.png" alt="Français">
+                </button>
+                <button class="lang-btn" id="langEn" data-lang="en">
+                    <img src="assets/flag_en.png" alt="English">
+                </button>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        
+        <!-- About Me Section -->
+        <section class="section section-left" id="about">
+            <div class="section-header">
+                <h2 data-en="About me" data-fr="À propos">About me</h2>
+            </div>
+            <div class="section-content">
+                <p data-en="Bla bla" data-fr="Bla bla">Bla bla</p>
+            </div>
+        </section>
+
+        <!-- Journey Section -->
+        <section class="section section-right" id="journey">
+            <div class="section-header">
+                <h2 data-en="Journey" data-fr="Parcours">Journey</h2>
+            </div>
+            <div class="section-content">
+                <p data-en="Blabla" data-fr="Blabla">Blabla</p>
+            </div>
+        </section>
+
+        <!-- Stack Technique Section -->
+        <section class="section section-left" id="stack">
+            <div class="section-header">
+                <h2 data-en="Stack technique" data-fr="Stack technique">Stack technique</h2>
+            </div>
+            <div class="section-content">
+                <p data-en="Bla bla" data-fr="Bla bla">Bla bla</p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section section-center" id="projects">
+            <div class="section-header">
+                <h2 data-en="Projects" data-fr="Projets">Projects</h2>
+            </div>
+            <div class="section-content">
+                <p data-en="Blabla" data-fr="Blabla">Blabla</p>
+            </div>
+        </section>
+
+        <!-- Passion Section -->
+        <section class="section section-right" id="passion">
+            <div class="section-header">
+                <h2 data-en="Passion" data-fr="Passion">Passion</h2>
+            </div>
+            <div class="section-content">
+                <p data-en="Blabla" data-fr="Blabla">Blabla</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="footer-content">
+            <div class="footer-left">
+                <h2 data-en="Get in touch" data-fr="Contactez-moi">Contactez-moi</h2>
+                <p data-en="Feel free to reach out for collaborations or just a friendly chat." data-fr="N'hésitez pas à me contacter pour des collaborations ou simplement discuter.">N'hésitez pas à me contacter pour des collaborations ou simplement discuter.</p>
+                <div class="footer-info">
+                    <p>© 2024 GIREMU - Gwilherm L.</p>
+                    <p data-en="Automation & Cybersecurity" data-fr="Automatisation & Cybersécurité">Automatisation & Cybersécurité</p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Nom" data-en-placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn" data-en="Send" data-fr="Envoyer">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
