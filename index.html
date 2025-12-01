@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Développeur Web & Cybersécurité</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <nav id="nav">
+        <div class="nav-container">
+            <a href="#" class="logo">Portfolio</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" data-fr="À Propos" data-en="About">À Propos</a></li>
+                <li><a href="#experience" data-fr="Expérience" data-en="Experience">Expérience</a></li>
+                <li><a href="#skills" data-fr="Compétences" data-en="Skills">Compétences</a></li>
+                <li><a href="#projects" data-fr="Projets" data-en="Projects">Projets</a></li>
+                <li><a href="#contact" data-fr="Contact" data-en="Contact">Contact</a></li>
+            </ul>
+            <div class="controls">
+                <button class="toggle-btn" id="themeToggle" onclick="toggleTheme()">🌙</button>
+                <button class="toggle-btn lang-toggle" id="langToggle" onclick="toggleLanguage()">
+                    <img src="assets/flag_en.webp" alt="English" id="langFlag">
+                </button>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="hero-subtitle" data-fr="Bienvenue sur mon portfolio" data-en="Welcome to my portfolio">Bienvenue sur mon portfolio</span>
+                <h1 class="hero-title">
+                    <span data-fr="Alternant Infrastructure &" data-en="Infrastructure & Networks">Alternant Infrastructure &</span>
+                    <span class="highlight" data-fr="Réseaux" data-en="Apprentice">Réseaux</span>
+                </h1>
+                <p class="hero-description" data-fr="Passionné par l'infrastructure réseau et la cybersécurité. Actuellement en alternance, je développe mes compétences en administration système, automatisation et sécurité des réseaux." data-en="Passionate about network infrastructure and cybersecurity. Currently in work-study program, developing skills in system administration, automation and network security.">
+                    Passionné par l'infrastructure réseau et la cybersécurité. Actuellement en alternance, je développe mes compétences en administration système, automatisation et sécurité des réseaux.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary" data-fr="Me Contacter" data-en="Contact Me">Me Contacter</a>
+                    <a href="#projects" class="btn btn-secondary" data-fr="Voir mes projets" data-en="View Projects">Voir mes projets</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-wrapper">
+                    <!-- Placeholder pour votre photo -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="section-container">
+            <div class="section-header">
+                <p class="section-subtitle" data-fr="Découvrez qui je suis" data-en="Discover who I am">Découvrez qui je suis</p>
+                <h2 class="section-title" data-fr="À Propos de Moi" data-en="About Me">À Propos de Moi</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-content">
+                    <h3 data-fr="Mon Parcours" data-en="My Journey">Mon Parcours</h3>
+                    <p data-fr="Diplômé d'un Bac+3 en infrastructure et réseaux, je suis actuellement en alternance où je développe mes compétences techniques en administration système, réseaux et sécurité." data-en="Graduated with a Bachelor's degree in infrastructure and networks, I am currently in a work-study program where I develop my technical skills in system administration, networks and security.">
+                        Diplômé d'un Bac+3 en infrastructure et réseaux, je suis actuellement en alternance où je développe mes compétences techniques en administration système, réseaux et sécurité.
+                    </p>
+                    <p data-fr="Mon objectif est de me spécialiser en cybersécurité ou dans l'infrastructure avec un focus sur l'automatisation. J'aime apprendre continuellement et relever de nouveaux défis techniques pour améliorer la sécurité et l'efficacité des systèmes." data-en="My goal is to specialize in cybersecurity or infrastructure with a focus on automation. I love continuous learning and taking on new technical challenges to improve system security and efficiency.">
+                        Mon objectif est de me spécialiser en cybersécurité ou dans l'infrastructure avec un focus sur l'automatisation. J'aime apprendre continuellement et relever de nouveaux défis techniques pour améliorer la sécurité et l'efficacité des systèmes.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">Bac+3</span>
+                        <span class="stat-label" data-fr="Diplôme Obtenu" data-en="Degree Earned">Diplôme Obtenu</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label" data-fr="Projets Réalisés" data-en="Projects Completed">Projets Réalisés</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">2+</span>
+                        <span class="stat-label" data-fr="Années d'Alternance" data-en="Years of Apprenticeship">Années d'Alternance</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="section-container">
+            <div class="section-header">
+                <p class="section-subtitle" data-fr="Mon parcours professionnel" data-en="My professional journey">Mon parcours professionnel</p>
+                <h2 class="section-title" data-fr="Expériences" data-en="Experience">Expériences</h2>
+            </div>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div>
+                            <h3 class="experience-title" data-fr="Alternant Infrastructure & Réseaux" data-en="Infrastructure & Networks Apprentice">Alternant Infrastructure & Réseaux</h3>
+                            <p class="experience-company">[Nom de votre entreprise]</p>
+                        </div>
+                        <span class="experience-date">2023 - Présent</span>
+                    </div>
+                    <p class="experience-description" data-fr="Administration et maintenance des infrastructures réseau et systèmes. Configuration et déploiement de solutions réseau. Automatisation de tâches avec PowerShell et Bash. Support technique et documentation des procédures." data-en="Administration and maintenance of network infrastructures and systems. Configuration and deployment of network solutions. Task automation with PowerShell and Bash. Technical support and documentation of procedures.">
+                        Administration et maintenance des infrastructures réseau et systèmes. Configuration et déploiement de solutions réseau. Automatisation de tâches avec PowerShell et Bash. Support technique et documentation des procédures.
+                    </p>
+                    <div class="experience-tags">
+                        <span class="tag">Windows Server</span>
+                        <span class="tag">Linux</span>
+                        <span class="tag">Réseaux</span>
+                        <span class="tag">PowerShell</span>
+                        <span class="tag">Automatisation</span>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div>
+                            <h3 class="experience-title" data-fr="Stagiaire Technicien Réseau" data-en="Network Technician Intern">Stagiaire Technicien Réseau</h3>
+                            <p class="experience-company">[Entreprise précédente]</p>
+                        </div>
+                        <span class="experience-date">2022-2023</span>
+                    </div>
+                    <p class="experience-description" data-fr="Assistance à la configuration et maintenance des équipements réseau. Installation et configuration de postes de travail. Participation à la documentation technique. Support utilisateur de niveau 1 et 2." data-en="Assistance with configuration and maintenance of network equipment. Installation and configuration of workstations. Participation in technical documentation. Level 1 and 2 user support.">
+                        Assistance à la configuration et maintenance des équipements réseau. Installation et configuration de postes de travail. Participation à la documentation technique. Support utilisateur de niveau 1 et 2.
+                    </p>
+                    <div class="experience-tags">
+                        <span class="tag">Cisco</span>
+                        <span class="tag">Active Directory</span>
+                        <span class="tag">TCP/IP</span>
+                        <span class="tag">Support IT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-container">
+            <div class="section-header">
+                <p class="section-subtitle" data-fr="Ce que je maîtrise" data-en="What I master">Ce que je maîtrise</p>
+                <h2 class="section-title" data-fr="Compétences" data-en="Skills">Compétences</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">🔒</div>
+                    <h3 data-fr="Cybersécurité" data-en="Cybersecurity">Cybersécurité</h3>
+                    <p data-fr="Connaissances en sécurité des systèmes et réseaux. Sensibilisation aux bonnes pratiques de sécurité, gestion des accès et détection des vulnérabilités. Veille active sur les menaces et nouvelles technologies de sécurité." data-en="Knowledge in systems and network security. Awareness of security best practices, access management and vulnerability detection. Active monitoring of threats and new security technologies.">
+                        Connaissances en sécurité des systèmes et réseaux. Sensibilisation aux bonnes pratiques de sécurité, gestion des accès et détection des vulnérabilités. Veille active sur les menaces et nouvelles technologies de sécurité.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">🌐</div>
+                    <h3 data-fr="Infrastructure Réseau" data-en="Network Infrastructure">Infrastructure Réseau</h3>
+                    <p data-fr="Configuration et administration de réseaux d'entreprise. Maîtrise des protocoles TCP/IP, routage et switching. Mise en place de VLANs, VPN et pare-feu. Expérience avec équipements Cisco et solutions de monitoring réseau." data-en="Configuration and administration of enterprise networks. Mastery of TCP/IP protocols, routing and switching. Implementation of VLANs, VPNs and firewalls. Experience with Cisco equipment and network monitoring solutions.">
+                        Configuration et administration de réseaux d'entreprise. Maîtrise des protocoles TCP/IP, routage et switching. Mise en place de VLANs, VPN et pare-feu. Expérience avec équipements Cisco et solutions de monitoring réseau.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">🖥️</div>
+                    <h3 data-fr="Administration Système" data-en="System Administration">Administration Système</h3>
+                    <p data-fr="Administration de systèmes Windows Server et Linux (Debian, Ubuntu). Gestion Active Directory, GPO et droits utilisateurs. Virtualisation avec Hyper-V et VMware. Déploiement et maintenance de serveurs." data-en="Administration of Windows Server and Linux systems (Debian, Ubuntu). Active Directory management, GPO and user rights. Virtualization with Hyper-V and VMware. Server deployment and maintenance.">
+                        Administration de systèmes Windows Server et Linux (Debian, Ubuntu). Gestion Active Directory, GPO et droits utilisateurs. Virtualisation avec Hyper-V et VMware. Déploiement et maintenance de serveurs.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">⚙️</div>
+                    <h3 data-fr="Automatisation" data-en="Automation">Automatisation</h3>
+                    <p data-fr="Scripting PowerShell et Bash pour l'automatisation des tâches répétitives. Création de scripts de déploiement et de monitoring. Optimisation des processus d'administration et gain de temps opérationnel." data-en="PowerShell and Bash scripting for automation of repetitive tasks. Creation of deployment and monitoring scripts. Optimization of administration processes and operational time savings.">
+                        Scripting PowerShell et Bash pour l'automatisation des tâches répétitives. Création de scripts de déploiement et de monitoring. Optimisation des processus d'administration et gain de temps opérationnel.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3 data-fr="Scripting & Programmation" data-en="Scripting & Programming">Scripting & Programmation</h3>
+                    <p data-fr="Compétences en Python, PowerShell et Bash pour l'automatisation et les outils système. Notions de base en développement web (HTML, CSS, JavaScript) pour interfaces d'administration." data-en="Skills in Python, PowerShell and Bash for automation and system tools. Basic knowledge in web development (HTML, CSS, JavaScript) for administration interfaces.">
+                        Compétences en Python, PowerShell et Bash pour l'automatisation et les outils système. Notions de base en développement web (HTML, CSS, JavaScript) pour interfaces d'administration.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">📊</div>
+                    <h3 data-fr="Monitoring & Surveillance" data-en="Monitoring & Surveillance">Monitoring & Surveillance</h3>
+                    <p data-fr="Utilisation d'outils de surveillance réseau et système (Zabbix, Nagios, Wireshark). Analyse de logs et détection d'anomalies. Mise en place d'alertes et tableaux de bord pour suivi proactif." data-en="Use of network and system monitoring tools (Zabbix, Nagios, Wireshark). Log analysis and anomaly detection. Setup of alerts and dashboards for proactive monitoring.">
+                        Utilisation d'outils de surveillance réseau et système (Zabbix, Nagios, Wireshark). Analyse de logs et détection d'anomalies. Mise en place d'alertes et tableaux de bord pour suivi proactif.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-container">
+            <div class="section-header">
+                <p class="section-subtitle" data-fr="Découvrez mes réalisations" data-en="Discover my work">Découvrez mes réalisations</p>
+                <h2 class="section-title" data-fr="Projets Récents" data-en="Recent Projects">Projets Récents</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3 data-fr="Infrastructure Réseau Sécurisée" data-en="Secure Network Infrastructure">Infrastructure Réseau Sécurisée</h3>
+                        <p data-fr="Conception et déploiement d'une infrastructure réseau segmentée avec VLANs, pare-feu et VPN. Mise en place de politiques de sécurité et monitoring des flux réseau." data-en="Design and deployment of a segmented network infrastructure with VLANs, firewall and VPN. Implementation of security policies and network flow monitoring.">
+                            Conception et déploiement d'une infrastructure réseau segmentée avec VLANs, pare-feu et VPN. Mise en place de politiques de sécurité et monitoring des flux réseau.
+                        </p>
+                        <div class="experience-tags">
+                            <span class="tag">Cisco</span>
+                            <span class="tag">pfSense</span>
+                            <span class="tag">VPN</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3 data-fr="Automatisation de Déploiements" data-en="Deployment Automation">Automatisation de Déploiements</h3>
+                        <p data-fr="Création de scripts PowerShell pour automatiser le déploiement de postes de travail et serveurs. Installation automatique d'applications et configuration standardisée." data-en="Creation of PowerShell scripts to automate workstation and server deployment. Automatic application installation and standardized configuration.">
+                            Création de scripts PowerShell pour automatiser le déploiement de postes de travail et serveurs. Installation automatique d'applications et configuration standardisée.
+                        </p>
+                        <div class="experience-tags">
+                            <span class="tag">PowerShell</span>
+                            <span class="tag">Active Directory</span>
+                            <span class="tag">Automation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3 data-fr="Système de Monitoring" data-en="Monitoring System">Système de Monitoring</h3>
+                        <p data-fr="Mise en place d'une solution de monitoring avec Zabbix pour surveiller l'infrastructure réseau et serveurs. Création de tableaux de bord et alertes automatiques." data-en="Implementation of a monitoring solution with Zabbix to monitor network infrastructure and servers. Creation of dashboards and automatic alerts.">
+                            Mise en place d'une solution de monitoring avec Zabbix pour surveiller l'infrastructure réseau et serveurs. Création de tableaux de bord et alertes automatiques.
+                        </p>
+                        <div class="experience-tags">
+                            <span class="tag">Zabbix</span>
+                            <span class="tag">Linux</span>
+                            <span class="tag">Monitoring</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-container">
+            <div class="section-header">
+                <p class="section-subtitle" data-fr="Restons en contact" data-en="Let's stay in touch">Restons en contact</p>
+                <h2 class="section-title" data-fr="Me Contacter" data-en="Contact Me">Me Contacter</h2>
+                <p class="section-description" data-fr="N'hésitez pas à me contacter pour discuter de vos projets ou pour toute question." data-en="Feel free to contact me to discuss your projects or for any questions.">
+                    N'hésitez pas à me contacter pour discuter de vos projets ou pour toute question.
+                </p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3 data-fr="Informations de Contact" data-en="Contact Information">Informations de Contact</h3>
+                    <p data-fr="Je suis disponible pour discuter d'opportunités professionnelles en infrastructure, réseaux ou cybersécurité. N'hésitez pas à me contacter via le formulaire ou directement par email." data-en="I am available to discuss professional opportunities in infrastructure, networks or cybersecurity. Feel free to contact me via the form or directly by email.">
+                        Je suis disponible pour discuter d'opportunités professionnelles en infrastructure, réseaux ou cybersécurité. N'hésitez pas à me contacter via le formulaire ou directement par email.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📧</div>
+                            <div>
+                                <strong>Email</strong><br>
+                                <span>votre.email@example.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📍</div>
+                            <div>
+                                <strong data-fr="Localisation" data-en="Location">Localisation</strong><br>
+                                <span data-fr="France" data-en="France">France</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">🎓</div>
+                            <div>
+                                <strong data-fr="Statut" data-en="Status">Statut</strong><br>
+                                <span data-fr="Alternant Bac+3" data-en="Work-Study Bachelor's">Alternant Bac+3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name" data-fr="Nom Complet" data-en="Full Name">Nom Complet</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-fr="Email" data-en="Email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" data-fr="Sujet" data-en="Subject">Sujet</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-fr="Message" data-en="Message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" data-fr="Envoyer le Message" data-en="Send Message">Envoyer le Message</button>
+                    <div class="form-status" id="formStatus"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="GitHub">
+                    <span>🔗</span>
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <span>💼</span>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                    <span>🐦</span>
+                </a>
+                <a href="#" class="social-link" aria-label="Email">
+                    <span>📧</span>
+                </a>
+            </div>
+            <p class="footer-text" data-fr="© 2024 Portfolio. Tous droits réservés." data-en="© 2024 Portfolio. All rights reserved.">
+                © 2024 Portfolio. Tous droits réservés.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
